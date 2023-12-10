@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <list>
 #include <string>
 
@@ -21,7 +20,7 @@ public:
     string max = "-1";
 
     for (const auto n : nums) {
-      if (atoi(n.c_str()) > atoi(max.c_str())) {
+      if (stoi(n) > stoi(max)) {
         max = n;
       }
     }
